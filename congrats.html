@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrats Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            max-width: 28rem;
+            width: 100%;
+            background-color: #1e1e1e;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .title {
+            font-size: 1.2rem; /* text-3xl */
+            font-weight: 600;
+            color: #facc15;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .name {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        .message {
+            padding: 1rem;
+            font-size: 0.9375rem; /* text-base */
+            font-weight: 400;
+            text-align: justify;
+            color: #d4d4d8;
+            line-height: 1.5;
+        }
+
+        .footer {
+            font-size: 0.875rem; /* text-sm */
+            margin-top: 1.25rem;
+            font-weight: 400;
+            text-align: center;
+            color: #9ca3af;
+        }
+        .contact{
+            font-size: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-size: 0.8rem;
+        }
+        .contact a{
+            color: violet;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.25rem;
+            }
+
+            .title {
+                font-size: 1.625rem; /* text-2xl */
+            }
+
+            .message {
+                font-size: 0.875rem; /* text-sm */
+            }
+
+            .footer {
+                font-size: 0.8125rem; /* text-xs */
+                text-align: center;
+            }
+            .contact{
+                font-size: 0.8125rem; /* text-xs */
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+                max-width: 90%;
+            }
+
+            .title {
+                font-size: 1.5rem; /* text-xl */
+            }
+
+            .message {
+                font-size: 0.8125rem; /* text-xs */
+                text-align: justify;
+            }
+
+            .footer {
+                font-size: 0.75rem; /* text-xs */
+                text-align: center;
+            }
+            .contact{
+                font-size: 0.6rem; /* text-xs */
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 32rem;
+                padding: 1rem;
+            }
+
+            .title {
+                font-size: 2rem; /* text-2xl */
+            }
+
+            .message {
+                font-size: 1rem; /* text-base */
+            }
+
+            .footer {
+                font-size: 0.875rem; /* text-sm */
+            }
+            .contact {
+                font-size: 0.7rem; /* text-sm */
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            // Ambil nama dari localStorage
+            const name = localStorage.getItem('name') || 'Guest';
+
+            // Tampilkan nama di setiap elemen dengan kelas 'name'
+            document.querySelectorAll('.name').forEach(function (element) {
+                element.innerText = name;
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="title">The latest achievement has been accomplished 🚀</p>
+        <p class="message">
+            Selamat yudisium <span class="name"></span>!
+        </p>
+        <p class="message">
+        Akhirnya hari yang dimana ditunggu-tunggu tiba juga‼️ Yudisium ini bukan jadi akhir dari perjuangan <span class="name"></span> ya, tapi ini lebih dari itu. Ini juga jadi bukti dimana semua usaha dan kerja keras kita semua ga sia-sia. Kalian termasuk akupun tau gimana lelah dan capenya selama nyusun. Ada yang mungkin bergadang sampe kurang tidur 😓😪, ada yang lupa makan 🤢, bahkan ada yang ingin ngelakuin kegiatan lain tapi gabisa dilakuin karena perlu beresin skripsiannya 😫. Semoga terbayar ya capeknya  semua itu sama hasil dari yudisium ini‼️
+        </p>
+        <p class="message">
+        Sekali lagi selamat atas yudisium dan selamat telah menamatkan UPI! 🎓 Semoga langkah <span class="name"></span> kedepannya bisa selalu dimudahkan dan dapet pekerjaan yang baik serta sesuai untuk <span class="name"></span> ya. Dunia kerja selanjutnya yang akan <span class="name"></span> hadapin ga bisa dibilang mudah, apapun hasil dari perjuangan kalian selanjutnya aku harap jangan pernah nyerah ya 😉 Inget, kalau mau sukses perlu ada perjuangan heheheh. Sekarang bisa rehat sejenak sambil nyiapin CV dan revisiannya, tapi setelah itu selamat berjuang di dunia kerja yang cukup keras ini! Sukses selalu untuk kalian! 🌟
+        </p>
+        <p class="footer">- Ibnu Aji</p>
+        <p class="contact">want to answer the message?<a href="https://api.whatsapp.com/send/?phone=6289526060150&text&type=phone_number&app_absent=0"> here</a></p>
+    </div>
+</body>
+
+</html>
